@@ -20,11 +20,11 @@
        */
        #content-page{
         max-width: 1300px;
-        min-width: 200px;
-          
-       
+        min-width: 200px;           
       
         } 
+
+
         .innercontentpage{
             margin-left:auto;
             margin-right:auto;
@@ -33,19 +33,40 @@
             display: flex;
             flex-wrap: wrap;
             gap:5em;
-            margin-left: 0;    
+            margin-left: 0; 
+            width: 1300px;   
         }
+        @media (max-width:600px) {           
+        
+        .innercontentpage{
+            margin-left:auto;
+            margin-right:auto;
+            margin-top: 10px;  
+            margin-bottom: 20px;                     
+            margin-left: 0;  
+             
+        }
+    }
         .innerhead{
            
             background-image:url('./images/Petsheader4.jpg');
         }
  
- 
+
         .section{
-         display: flex;
-        
-         min-width: auto;
-         max-width: 40%;
+            display: flex;              
+           width: 40%;
+            /* max-width: 300px; 
+            min-width: 50px; */
+            height: auto; 
+            padding-right: 15px;  
+            padding-bottom: 15px;       
+            box-shadow: 5px 5px 5px 0.7px rgba(153, 153, 153, .3);
+        }
+         @media (max-width:600px){
+        .section{
+         display: flex;              
+      
          /* max-width: 300px; 
          min-width: 50px; */
          height: auto; 
@@ -53,6 +74,7 @@
          padding-bottom: 15px;       
          box-shadow: 5px 5px 5px 0.7px rgba(153, 153, 153, .3);
      }
+    }
    
         
          .container{
